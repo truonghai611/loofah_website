@@ -101,4 +101,4 @@
       setTimeout(function () { btn.textContent = 'Join the list'; input.placeholder = 'you@company.com'; }, 2600);
     });
   }
-})();
+  // s
