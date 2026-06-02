@@ -151,3 +151,36 @@
     }, {passive: true});
   })();
 })();
+
+/* ── Proof image lightbox ── */
+(function () {
+  var lb      = document.getElementById('proofLightbox');
+  var lbImg   = document.getElementById('lightboxImg');
+  var lbCap   = document.getElementById('lightboxCaption');
+  var lbClose = document.getElementById('lightboxClose');
+  if (!lb) return;
+
+  function open(src, caption) {
+    lbImg.src = src;
+    lbImg.alt = caption;
+    lbCap.textContent = caption;
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lb.classList.remove('active');
+    document.body.style.overflow = '';
+    lbImg.src = '';
+  }
+
+  document.querySelectorAll('.proof-item[data-lightbox]').forEach(function (fig) {
+    fig.addEventListener('click', function () {
+      open(fig.dataset.lightbox, fig.dataset.caption || '');
+    });
+  });
+
+  lbClose.addEventListener('click', close);
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+}());

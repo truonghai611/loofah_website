@@ -683,18 +683,25 @@
             <p>Real photos and documents from orders we've produced and exported.</p>
           </div>
           <div class="proof-row">
-            <figure class="proof-item"><img src="images/proof-1.webp" alt="Bill of Lading document" />
+            <figure class="proof-item" data-lightbox="images/proof-1.webp" data-caption="Bill of Lading"><img src="images/proof-1.webp" alt="Bill of Lading document" />
               <figcaption>Bill of Lading</figcaption>
             </figure>
-            <figure class="proof-item"><img src="images/proof-2.webp" alt="Packing and carton photo" />
+            <figure class="proof-item" data-lightbox="images/proof-2.webp" data-caption="Certificate of Origin"><img src="images/proof-2.webp" alt="Packing and carton photo" />
               <figcaption>Certificate of Origin</figcaption>
             </figure>
-            <figure class="proof-item"><img src="images/proof-3.webp" alt="Phytosanitary certificate" />
+            <figure class="proof-item" data-lightbox="images/proof-3.webp" data-caption="Phytosanitary Certificate"><img src="images/proof-3.webp" alt="Phytosanitary certificate" />
               <figcaption>Phytosanitary Certificate</figcaption>
             </figure>
-            <figure class="proof-item"><img src="images/proof-4.webp" alt="Fumigation certificate" />
+            <figure class="proof-item" data-lightbox="images/proof-4.webp" data-caption="Fumigation Certificate"><img src="images/proof-4.webp" alt="Fumigation certificate" />
               <figcaption>Fumigation Certificate</figcaption>
             </figure>
+          </div>
+
+          <!-- Lightbox overlay -->
+          <div id="proofLightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Document preview">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+            <p class="lightbox-caption" id="lightboxCaption"></p>
           </div>
         </div>
       </div>
