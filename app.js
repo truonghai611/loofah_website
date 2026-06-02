@@ -101,4 +101,53 @@
       setTimeout(function () { btn.textContent = 'Join the list'; input.placeholder = 'you@company.com'; }, 2600);
     });
   }
-  // s
+  // shipment carousel
+  (function () {
+    var track = document.getElementById('shipmentTrack');
+    var dotsWrap = document.getElementById('shipmentDots');
+    if (!track || !dotsWrap) return;
+    var slides = track.querySelectorAll('.shipment-slide');
+    var total = slides.length;
+    var visible = window.innerWidth <= 700 ? 1 : 3;
+    var maxIndex = Math.max(0, total - visible);
+    var current = 0;
+
+    function buildDots() {
+      dotsWrap.innerHTML = '';
+      for (var i = 0; i <= maxIndex; i++) {
+        var d = document.createElement('button');
+        d.className = 'dot' + (i === current ? ' active' : '');
+        d.setAttribute('aria-label', 'Slide ' + (i + 1));
+        d.dataset.i = i;
+        d.addEventListener('click', function () { goTo(+this.dataset.i); });
+        dotsWrap.appendChild(d);
+      }
+    }
+
+    function goTo(idx) {
+      current = Math.min(Math.max(idx, 0), maxIndex);
+      var slideW = slides[0].offsetWidth + 16;
+      track.style.transform = 'translateX(-' + (current * slideW) + 'px)';
+      dotsWrap.querySelectorAll('.dot').forEach(function (d, i) {
+        d.classList.toggle('active', i === current);
+      });
+    }
+
+    buildDots();
+
+    // drag/swipe
+    var startX = 0, dragging = false;
+    track.parentElement.addEventListener('mousedown', function (e) { startX = e.clientX; dragging = true; });
+    track.parentElement.addEventListener('mousemove', function (e) { if (dragging) e.preventDefault(); });
+    track.parentElement.addEventListener('mouseup', function (e) {
+      if (!dragging) return; dragging = false;
+      var diff = startX - e.clientX;
+      if (Math.abs(diff) > 50) goTo(current + (diff > 0 ? 1 : -1));
+    });
+    track.parentElement.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, {passive: true});
+    track.parentElement.addEventListener('touchend', function (e) {
+      var diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) goTo(current + (diff > 0 ? 1 : -1));
+    }, {passive: true});
+  })();
+})();
