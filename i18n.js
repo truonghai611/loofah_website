@@ -289,19 +289,14 @@
     "Join the list": "Đăng ký",
 
     // ---- footer ----
-    "Private-label natural loofah products for Amazon sellers and eco shops — export-ready, from Vietnam.":
-      "Sản phẩm xơ mướp tự nhiên nhãn riêng cho người bán Amazon và cửa hàng eco — sẵn sàng xuất khẩu, từ Việt Nam.",
-    "Gift sets": "Set quà tặng",
-    "Bulk refill": "Gói refill số lượng lớn",
-    "Buyers": "Người mua",
-    "For Amazon sellers": "Cho người bán Amazon",
-    "For eco shops": "Cho cửa hàng eco",
-    "Private label": "Nhãn riêng",
-    "Quality & export": "Chất lượng & xuất khẩu",
-    "Sample kit": "Bộ mẫu",
-    "Company": "Công ty",
-    "Wholesale catalog": "Catalog sỉ",
-    "About": "Giới thiệu",
+    "Explore": "Khám phá",
+    "For Amazon Sellers": "Cho người bán Amazon",
+    "For Eco Shops": "Cho cửa hàng eco",
+    "Sample Kit": "Bộ mẫu",
+    "Request a Quote": "Yêu cầu báo giá",
+    "Get in Touch": "Liên hệ",
+    "Email": "Email",
+    "Follow us for product updates and new collections": "Theo dõi chúng tôi để cập nhật sản phẩm và bộ sưu tập mới",
     "© 2026 loofahvn.com — Made from natural loofah plant fiber in Vietnam.":
       "© 2026 loofahvn.com — Làm từ sợi xơ mướp tự nhiên tại Việt Nam."
   };
