@@ -1,5 +1,22 @@
 // Loofah — interactions
 (function () {
+  // Public Enquiry API config — đọc từ cred.txt (key=value mỗi dòng).
+  // Cả 2 giá trị đều public (client-id gửi qua header, endpoint không cần secret).
+  var ENQUIRY_API_BASE = 'https://api.loofahvn.com';
+  var ENQUIRY_CLIENT_ID = '';
+  var credReady = fetch('cred.txt', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.text() : ''; })
+    .then(function (txt) {
+      txt.split('\n').forEach(function (line) {
+        var i = line.indexOf('=');
+        if (i < 0) return;
+        var key = line.slice(0, i).trim();
+        var val = line.slice(i + 1).trim();
+        if (key === 'ENQUIRY_API_BASE' && val) ENQUIRY_API_BASE = val.replace(/\/+$/, '');
+        else if (key === 'ENQUIRY_CLIENT_ID' && val) ENQUIRY_CLIENT_ID = val;
+      });
+    })
+    .catch(function () { /* giữ default */ });
   // header shadow on scroll
   var header = document.getElementById('header');
   function onScroll() {
@@ -78,13 +95,104 @@
     });
   });
 
-  // RFQ form -> success state
+  // RFQ form -> Public Enquiry API
   var rfq = document.getElementById('rfqForm');
   if (rfq) {
+    var errBox = document.getElementById('rfqError');
+    var submitBtn = rfq.querySelector('.rfq-submit');
+
+    function selectedValue(groupName) {
+      var on = rfq.querySelector('.seg[data-group="' + groupName + '"] button.on');
+      return on ? on.getAttribute('data-value') : '';
+    }
+    function showError(msg) {
+      if (!errBox) return;
+      errBox.textContent = msg;
+      errBox.hidden = false;
+    }
+    function lang() {
+      try { return localStorage.getItem('loofah-lang') || 'en'; } catch (e) { return 'en'; }
+    }
+    // bilingual strings cho phần JS-sinh (i18n.js không swap được node runtime)
+    var T = {
+      en: {
+        RATE_LIMITED: 'You’ve sent too many requests. Please try again later.',
+        CAPTCHA_REQUIRED: 'Captcha verification required. Please refresh and retry.',
+        CAPTCHA_FAILED: 'Captcha verification failed. Please try again.',
+        CLIENT_ID_REQUIRED: 'Configuration error — please contact us directly.',
+        CLIENT_ID_INVALID: 'Configuration error — please contact us directly.',
+        UNKNOWN: 'Something went wrong. Please try again or email info@winvnint.com.',
+        EMAIL_REQUIRED: 'Please enter your email.',
+        SENDING: 'Sending…'
+      },
+      vi: {
+        RATE_LIMITED: 'Bạn gửi quá nhiều yêu cầu. Vui lòng thử lại sau.',
+        CAPTCHA_REQUIRED: 'Cần xác minh captcha. Vui lòng tải lại trang và thử lại.',
+        CAPTCHA_FAILED: 'Xác minh captcha thất bại. Vui lòng thử lại.',
+        CLIENT_ID_REQUIRED: 'Lỗi cấu hình — vui lòng liên hệ trực tiếp với chúng tôi.',
+        CLIENT_ID_INVALID: 'Lỗi cấu hình — vui lòng liên hệ trực tiếp với chúng tôi.',
+        UNKNOWN: 'Có lỗi xảy ra. Vui lòng thử lại hoặc gửi email tới info@winvnint.com.',
+        EMAIL_REQUIRED: 'Vui lòng nhập email của bạn.',
+        SENDING: 'Đang gửi…'
+      }
+    };
+    function t(key) { return (T[lang()] || T.en)[key] || T.en[key]; }
+
     rfq.addEventListener('submit', function (e) {
       e.preventDefault();
-      rfq.style.display = 'none';
-      document.getElementById('rfqSuccess').classList.add('show');
+      if (errBox) errBox.hidden = true;
+
+      var payload = {
+        role: selectedValue('role'),
+        targetMarket: selectedValue('market'),
+        email: (rfq.querySelector('[name="email"]').value || '').trim(),
+        interestedProducts: rfq.querySelector('[name="interestedProducts"]').value.trim(),
+        estOrderQty: rfq.querySelector('[name="estOrderQty"]').value.trim(),
+        needPrivateLabel: rfq.querySelector('[name="needPrivateLabel"]').value,
+        currentStage: rfq.querySelector('[name="currentStage"]').value,
+        message: rfq.querySelector('[name="message"]').value.trim(),
+        website: rfq.querySelector('[name="website"]').value // honeypot
+      };
+
+      // bỏ field rỗng optional (Zod strip / tránh enum '' fail)
+      ['interestedProducts', 'estOrderQty', 'needPrivateLabel', 'currentStage', 'message'].forEach(function (k) {
+        if (!payload[k]) delete payload[k];
+      });
+
+      if (!payload.email) { showError(t('EMAIL_REQUIRED')); return; }
+
+      var prevLabel = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = t('SENDING'); }
+
+      credReady
+        .then(function () {
+          if (!ENQUIRY_CLIENT_ID) throw new Error('CLIENT_ID_REQUIRED');
+          return fetch(ENQUIRY_API_BASE + '/api/v1/public/enquiries', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'x-client-id': ENQUIRY_CLIENT_ID
+            },
+            body: JSON.stringify(payload)
+          });
+        })
+        .then(function (res) {
+          return res.json().catch(function () { return {}; }).then(function (json) {
+            return { ok: res.ok, json: json };
+          });
+        })
+        .then(function (r) {
+          if (!r.ok) {
+            var code = (r.json && r.json.error && r.json.error.code) || 'UNKNOWN';
+            throw new Error(code);
+          }
+          rfq.style.display = 'none';
+          document.getElementById('rfqSuccess').classList.add('show');
+        })
+        .catch(function (err) {
+          showError(t(err.message) || t('UNKNOWN'));
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = prevLabel; }
+        });
     });
   }
 

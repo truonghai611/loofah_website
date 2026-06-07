@@ -594,6 +594,8 @@ body.menu-open .mobile-menu .mm-inner { max-height: 80vh; }
 .field textarea { resize: vertical; min-height: 84px; }
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .rfq-submit { width: 100%; justify-content: center; margin-top: 6px; }
+.rfq-submit:disabled { opacity: .65; cursor: not-allowed; }
+.form-error { margin-bottom: 12px; padding: 10px 14px; border-radius: 8px; background: #fdecea; border: 1px solid #f5c2bd; color: #b3261e; font-size: 14px; }
 .form-success { display: none; text-align: center; padding: 30px 10px; }
 .form-success.show { display: block; }
 .form-success .big { width: 64px; height: 64px; border-radius: 50%; background: var(--green-soft); color: var(--green); display: grid; place-items: center; margin: 0 auto 16px; }
