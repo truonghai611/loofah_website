@@ -121,7 +121,7 @@
         CAPTCHA_FAILED: 'Captcha verification failed. Please try again.',
         CLIENT_ID_REQUIRED: 'Configuration error — please contact us directly.',
         CLIENT_ID_INVALID: 'Configuration error — please contact us directly.',
-        UNKNOWN: 'Something went wrong. Please try again or email info@winvnint.com.',
+        UNKNOWN: 'Something went wrong. Please try again or email henry.nguyen@loofahvn.com.',
         EMAIL_REQUIRED: 'Please enter your email.',
         SENDING: 'Sending…'
       },
@@ -131,7 +131,7 @@
         CAPTCHA_FAILED: 'Xác minh captcha thất bại. Vui lòng thử lại.',
         CLIENT_ID_REQUIRED: 'Lỗi cấu hình — vui lòng liên hệ trực tiếp với chúng tôi.',
         CLIENT_ID_INVALID: 'Lỗi cấu hình — vui lòng liên hệ trực tiếp với chúng tôi.',
-        UNKNOWN: 'Có lỗi xảy ra. Vui lòng thử lại hoặc gửi email tới info@winvnint.com.',
+        UNKNOWN: 'Có lỗi xảy ra. Vui lòng thử lại hoặc gửi email tới henry.nguyen@loofahvn.com.',
         EMAIL_REQUIRED: 'Vui lòng nhập email của bạn.',
         SENDING: 'Đang gửi…'
       }
@@ -252,19 +252,19 @@
       var diff = startX - e.clientX;
       if (Math.abs(diff) > 50) goTo(current + (diff > 0 ? 1 : -1));
     });
-    track.parentElement.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, {passive: true});
+    track.parentElement.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
     track.parentElement.addEventListener('touchend', function (e) {
       var diff = startX - e.changedTouches[0].clientX;
       if (Math.abs(diff) > 40) goTo(current + (diff > 0 ? 1 : -1));
-    }, {passive: true});
+    }, { passive: true });
   })();
 })();
 
 /* ── Proof image lightbox ── */
 (function () {
-  var lb      = document.getElementById('proofLightbox');
-  var lbImg   = document.getElementById('lightboxImg');
-  var lbCap   = document.getElementById('lightboxCaption');
+  var lb = document.getElementById('proofLightbox');
+  var lbImg = document.getElementById('lightboxImg');
+  var lbCap = document.getElementById('lightboxCaption');
   var lbClose = document.getElementById('lightboxClose');
   if (!lb) return;
 

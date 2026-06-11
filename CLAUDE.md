@@ -46,7 +46,7 @@ No build step. No `npm install`. Edit → refresh.
 - Primary green: `#3f6b4d`  
 - Accent amber: `#e8a23d`  
 - Domain: `https://loofahvn.com/`  
-- Contact: `info@winvnint.com` / `henry.nguyen@loofahvn.com`
+- Contact: `henry.nguyen@loofahvn.com`
 
 ## Asset Locations
 
