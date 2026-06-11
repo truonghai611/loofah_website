@@ -13,6 +13,17 @@
     "Quality": "Chất lượng",
     "Wholesale Catalog": "Catalog sỉ",
     "Get Sample Kit": "Nhận bộ mẫu",
+    "Journal": "Nhật ký",
+    "Field Journal": "Nhật ký nông trại",
+    "Amazon Sellers": "Người bán Amazon",
+    "Eco Shops": "Cửa hàng eco",
+
+    // ---- field journal (blog) ----
+    "The Loofah Journal": "Nhật ký Xơ Mướp",
+    "Notes from the": "Ghi chép từ",
+    "loofah field": "ruộng xơ mướp",
+    "Stories from our farm in Vietnam — how natural loofah grows, how it is harvested and finished, how to care for it, and what a plastic-free routine actually looks like.":
+      "Câu chuyện từ nông trại của chúng tôi tại Việt Nam — xơ mướp tự nhiên lớn lên thế nào, được thu hoạch và hoàn thiện ra sao, cách chăm sóc, và một thói quen không nhựa thực sự trông như thế nào.",
     "Download Wholesale Catalog": "Tải catalog sỉ",
 
     // ---- hero floats ----

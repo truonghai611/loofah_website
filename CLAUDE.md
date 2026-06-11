@@ -19,6 +19,8 @@ Three files do everything:
 
 Both `app.js` and `i18n.js` are loaded as plain `<script>` tags at the bottom of `index.html`. They are IIFEs with no module system.
 
+**Field Journal (blog)**: `blog.html` (listing) + `article.html` (detail, `?slug=`) + `blog.js` + `blog.css`. `blog.js` fetches published articles from the loofahvn CRM public API (`GET {apiBase}/api/v1/public/articles?workspace=...`, configured via `window.LOOFAH_BLOG_CONFIG`); when unconfigured or unreachable it renders the embedded `SEED` entries (mirrors `src/scripts/seed-articles.ts` in the loofahvn repo). Blog pages load `blog.js` + `i18n.js` but NOT `app.js` (its menu/carousel code assumes index.html DOM). `serve.json` disables `npx serve` clean-URLs so `article.html?slug=` keeps its query string locally.
+
 ## Key Patterns
 
 **i18n**: `i18n.js` snapshots English text from the DOM on load, then swaps fragments to Vietnamese using a hardcoded `DICT` object. Matching is whitespace- and quote-normalized. When adding new visible text in `index.html`, add the corresponding EN→VI entry to `DICT` in `i18n.js`.
