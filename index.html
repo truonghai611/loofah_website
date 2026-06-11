@@ -828,54 +828,59 @@
             <div class="field">
               <label>I am a…</label>
               <div class="seg" data-group="role">
-                <button type="button" class="on">Amazon seller</button>
-                <button type="button">Eco shop</button>
-                <button type="button">Distributor</button>
-                <button type="button">Brand</button>
+                <button type="button" class="on" data-value="amazon_seller">Amazon seller</button>
+                <button type="button" data-value="eco_shop">Eco shop</button>
+                <button type="button" data-value="distributor">Distributor</button>
+                <button type="button" data-value="brand">Brand</button>
               </div>
             </div>
             <div class="field">
               <label>Target market</label>
               <div class="seg" data-group="market">
-                <button type="button" class="on">US</button>
-                <button type="button">EU</button>
-                <button type="button">UK</button>
-                <button type="button">Canada</button>
-                <button type="button">Other</button>
+                <button type="button" class="on" data-value="US">US</button>
+                <button type="button" data-value="EU">EU</button>
+                <button type="button" data-value="UK">UK</button>
+                <button type="button" data-value="Canada">Canada</button>
+                <button type="button" data-value="Other">Other</button>
               </div>
             </div>
             <div class="field-row">
-              <div class="field"><label>Interested products</label><input type="text"
-                  placeholder="Bath, kitchen, gift set…" /></div>
-              <div class="field"><label>Est. order quantity</label><input type="text" placeholder="e.g. 300 units" />
+              <div class="field"><label>Interested products</label><input type="text" name="interestedProducts"
+                  maxlength="500" placeholder="Bath, kitchen, gift set…" /></div>
+              <div class="field"><label>Est. order quantity</label><input type="text" name="estOrderQty"
+                  maxlength="100" placeholder="e.g. 300 units" />
               </div>
             </div>
             <div class="field-row">
               <div class="field">
                 <label>Need private label?</label>
-                <select>
-                  <option>Yes</option>
-                  <option>No</option>
-                  <option>Not sure yet</option>
+                <select name="needPrivateLabel">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                  <option value="">Not sure yet</option>
                 </select>
               </div>
               <div class="field">
                 <label>Current stage</label>
-                <select>
-                  <option>Researching</option>
-                  <option>Ready to sample</option>
-                  <option>Ready to order</option>
+                <select name="currentStage">
+                  <option value="researching">Researching</option>
+                  <option value="comparing">Ready to sample</option>
+                  <option value="ready_to_order">Ready to order</option>
                 </select>
               </div>
             </div>
             <div class="field">
               <label>Email</label>
-              <input type="email" placeholder="you@company.com" required />
+              <input type="email" name="email" placeholder="you@company.com" required />
             </div>
             <div class="field" style="margin-bottom:20px;">
               <label>Message</label>
-              <textarea placeholder="Tell us what you’re planning to launch…"></textarea>
+              <textarea name="message" maxlength="2000" placeholder="Tell us what you’re planning to launch…"></textarea>
             </div>
+            <!-- honeypot: ẩn, người thật không thấy -->
+            <input type="text" name="website" tabindex="-1" autocomplete="off"
+                   style="position:absolute;left:-9999px" aria-hidden="true" />
+            <div class="form-error" id="rfqError" role="alert" hidden></div>
             <button type="submit" class="btn btn-primary rfq-submit">Request Catalog & Sample Quote</button>
           </form>
           <div class="form-success" id="rfqSuccess">
