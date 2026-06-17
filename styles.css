@@ -121,7 +121,7 @@ img { max-width: 100%; display: block; }
 }
 .logo {
   display: inline-flex; align-items: center; gap: 9px;
-  font-family: var(--font-display); font-weight: 800; font-size: 23px;
+  font-family: var(--font-body); font-weight: 700; font-size: 23px;
   letter-spacing: -.03em; color: var(--ink);
 }
 .logo .mark {
@@ -631,7 +631,7 @@ body.menu-open .mobile-menu .mm-inner { max-height: 80vh; }
 .footer-top { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1.6fr; gap: 40px; align-items: start; }
 /* Brand column */
 .footer-logo { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 20px; text-decoration: none; }
-.footer-logo-text { font-family: var(--font-head); font-size: 22px; font-weight: 700; color: var(--ink); letter-spacing: -.02em; }
+.footer-logo-text { font-family: var(--font-body); font-size: 22px; font-weight: 700; color: var(--ink); letter-spacing: -.02em; }
 .footer-contact-item { font-size: 14px; color: var(--ink); margin: 0 0 10px; line-height: 1.6; }
 .footer-contact-item strong { color: var(--ink); font-weight: 600; margin-right: 4px; }
 .footer-contact-item a { color: var(--ink); }
