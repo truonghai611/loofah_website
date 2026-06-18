@@ -309,7 +309,99 @@
     "Email": "Email",
     "Follow us for product updates and new collections": "Theo dõi chúng tôi để cập nhật sản phẩm và bộ sưu tập mới",
     "© 2026 loofahvn.com — Made from natural loofah plant fiber in Vietnam.":
-      "© 2026 loofahvn.com — Làm từ sợi xơ mướp tự nhiên tại Việt Nam."
+      "© 2026 loofahvn.com — Làm từ sợi xơ mướp tự nhiên tại Việt Nam.",
+
+    // ---- v2: nav additions ----
+    "Why Our Fibre": "Vì sao chọn sợi của chúng tôi",
+    "Wholesale": "Bán sỉ",
+
+    // ---- v2: hero ----
+    "Vine-dried 7–9 months · Made in Vietnam": "Khô trên giàn 7–9 tháng · Sản xuất tại Việt Nam",
+    "Launch a natural": "Ra mắt dòng",
+    "that survives the ocean — and your reviews": "xơ mướp tự nhiên trụ vững qua đường biển — và qua review của bạn",
+    "Our loofah is left to dry naturally on the vine for 7–9 months and harvested only once fully matured — so it ships denser, holds up longer, and resists the mold and inconsistency that trigger 1-star reviews. Private-label packaging, sample kits and ready-to-use content included.":
+      "Xơ mướp của chúng tôi được để khô tự nhiên ngay trên giàn trong 7–9 tháng và chỉ thu hoạch khi đã chín hẳn — nhờ vậy hàng đặc hơn, bền hơn, và chống được mốc cùng sự thiếu đồng đều vốn gây ra review 1 sao. Kèm bao bì nhãn riêng, bộ mẫu và tài liệu nội dung sẵn dùng.",
+
+    // ---- v2: trust badges ----
+    "Vine-dried 7–9 months": "Khô trên giàn 7–9 tháng",
+    "Matured and dried in place on the vine — denser, tougher and less mold-prone.":
+      "Chín và khô ngay trên giàn — đặc hơn, dai hơn và ít bị mốc hơn.",
+    "Ships mold-checked & QC-documented": "Giao hàng đã kiểm mốc & có hồ sơ QC",
+    "Moisture-controlled and inspected before shipment — no \"ocean surprise\" on arrival.":
+      "Kiểm soát độ ẩm và kiểm tra trước khi giao — không còn \"bất ngờ sau đường biển\" khi hàng đến.",
+
+    // ---- v2: why our fibre ----
+    "Why our fibre": "Vì sao chọn sợi của chúng tôi",
+    "The fibre is the whole game": "Sợi mới là yếu tố quyết định tất cả",
+    "Most loofah problems — mold, breakage, uneven texture, 1-star reviews — start with young, under-dried fibre. Ours is left to mature and dry naturally on the vine for 7–9 months, and harvested only once it has fully dried in place.":
+      "Hầu hết vấn đề của xơ mướp — mốc, gãy, kết cấu không đều, review 1 sao — đều bắt đầu từ sợi non, chưa khô tới. Sợi của chúng tôi được để chín và khô tự nhiên trên giàn trong 7–9 tháng, và chỉ thu hoạch khi đã khô hẳn ngay tại chỗ.",
+    "Consistency you can forecast": "Độ ổn định có thể dự báo",
+    "Graded and QC'd so lot #2 matches lot #1 — fewer surprises when you reorder at scale.":
+      "Được chọn cỡ và QC để lô #2 khớp lô #1 — ít bất ngờ khi bạn đặt lại số lượng lớn.",
+    "Mold- & odor-resistant in transit": "Chống mốc & mùi khi vận chuyển",
+    "Fully matured on the vine, then moisture-controlled and mold-checked before shipment — built to hold up across a 30-day ocean leg.":
+      "Chín hẳn trên giàn, rồi kiểm soát độ ẩm và kiểm mốc trước khi giao — đủ bền cho chặng đường biển 30 ngày.",
+    "Durability = value": "Độ bền = giá trị",
+    "Built to outlast cheap synthetic sponges — the #1 reason US shoppers now choose sustainable.":
+      "Bền hơn bông tổng hợp giá rẻ — lý do số 1 khiến người mua Mỹ nay chọn sản phẩm bền vững.",
+
+    // ---- v2: amazon ----
+    "\"On Amazon, you don't lose on ads first — you lose on returns, removals and mold complaints. A natural product that fails quietly destroys your ranking.\"":
+      "\"Trên Amazon, bạn không mất tiền vì quảng cáo trước — bạn mất vì hàng trả, gỡ listing và khiếu nại mốc. Một sản phẩm tự nhiên hỏng âm thầm sẽ phá nát thứ hạng của bạn.\"",
+    "Vine-dried mature fibre": "Sợi đã chín, khô trên giàn",
+    "— fewer failure-driven returns & removals.": "— ít hàng trả & gỡ listing do lỗi sản phẩm.",
+    "Compact & compressible": "Nhỏ gọn & nén được",
+    "— friendly to FBA cartons and lower landed cost.": "— phù hợp thùng FBA và giảm chi phí về kho.",
+    "Mold-checked & QC-documented": "Kiểm mốc & có hồ sơ QC",
+    "— before every shipment leaves Vietnam.": "— trước mỗi lô hàng rời Việt Nam.",
+    "— sizes, sets, compressed, with cotton bag.": "— kích cỡ, bộ, dạng nén, kèm túi cotton.",
+    "Free media kit (photos + video) — launch faster, spend less on ad creative":
+      "Bộ media miễn phí (ảnh + video) — ra mắt nhanh hơn, tốn ít chi phí quảng cáo hơn",
+
+    // ---- v2: eco ----
+    "\"Your customers read labels. A natural loofah wrapped in plastic is a shelf contradiction — and they'll call it out.\"":
+      "\"Khách của bạn đọc nhãn. Một miếng xơ mướp tự nhiên bọc trong nhựa là sự mâu thuẫn ngay trên kệ — và họ sẽ nhận ra.\"",
+    "Paper-first retail packaging": "Bao bì bán lẻ ưu tiên giấy",
+    "— kraft sleeve, cotton bag, no single-use plastic.": "— bao giấy kraft, túi cotton, không nhựa dùng một lần.",
+    "One-breath disposal script for staff": "Câu hướng dẫn thải bỏ ngắn gọn cho nhân viên",
+    "— \"use, dry, retire, compost the fibre at home.\"": "— \"dùng, phơi khô, ngưng dùng, ủ phân phần sợi tại nhà.\"",
+
+    // ---- v2: wholesale ----
+    "For Wholesalers & Distributors": "Cho nhà bán sỉ & nhà phân phối",
+    "A line your accounts can re-tell and reorder": "Một dòng sản phẩm mà đại lý của bạn có thể kể lại và đặt lại",
+    "\"A loose SKU list creates work, not velocity. Your accounts need something they can shelve, explain and reorder without hand-holding.\"":
+      "\"Một danh sách SKU rời rạc tạo ra việc, chứ không tạo ra tốc độ bán. Đại lý của bạn cần thứ có thể lên kệ, giải thích và đặt lại mà không cần cầm tay chỉ việc.\"",
+    "Reseller-ready kit": "Bộ tài liệu sẵn cho đại lý",
+    "— line sheet, story card and clean visuals in one pack.": "— line sheet, thẻ câu chuyện và hình ảnh gọn gàng trong một bộ.",
+    "Hero-first assortment": "Cơ cấu hàng ưu tiên sản phẩm chủ lực",
+    "— bath heroes first, kitchen as add-on.": "— sản phẩm tắm chủ lực trước, nhà bếp là hàng bổ sung.",
+    "Retellable origin story": "Câu chuyện nguồn gốc dễ kể lại",
+    "— a respectful Central Vietnam story told with dignity, not pity.":
+      "— câu chuyện miền Trung Việt Nam được kể bằng sự tôn trọng, không phải thương hại.",
+    "Lower sell-in friction": "Giảm trở ngại khi chào hàng",
+    "— QC summary and claim sheet ready to go.": "— bảng tóm tắt QC và bảng cam kết sẵn sàng.",
+    "Request the reseller-ready line sheet": "Yêu cầu line sheet sẵn cho đại lý",
+
+    // ---- v2: collections / private label / quality ----
+    "Eight ready-to-private-label SKUs across bathroom, body care and kitchen — each made from the same vine-dried mature loofah fibre, built to last, with size options and SKUs ready for your catalog or listing. Bath heroes first, kitchen as add-on.":
+      "Tám SKU sẵn sàng làm nhãn riêng cho phòng tắm, chăm sóc cơ thể và nhà bếp — đều làm từ cùng một loại sợi xơ mướp chín khô trên giàn, bền bỉ, có tùy chọn kích cỡ và mã SKU sẵn cho catalog hoặc listing. Sản phẩm tắm chủ lực trước, nhà bếp là hàng bổ sung.",
+    "Classic loofah dish scrubber for everyday dishwashing — quick-drying and breathable so it resists odor and mold between washes.":
+      "Miếng chà xơ mướp cổ điển cho việc rửa chén hằng ngày — khô nhanh và thoáng khí nên chống mùi và mốc giữa các lần dùng.",
+    "We avoid generic \"eco\" claims — every label statement is scoped and defensible (FTC Green Guides friendly).":
+      "Chúng tôi tránh các cam kết \"eco\" chung chung — mỗi dòng trên nhãn đều có phạm vi rõ ràng và bảo vệ được (phù hợp FTC Green Guides).",
+    "Natural fibre scares buyers for one reason: inconsistency. Here's exactly how we remove that risk before your goods leave Vietnam — sort, grade, cut, pack and document every step.":
+      "Sợi tự nhiên khiến người mua e ngại vì một lý do: thiếu đồng đều. Đây là cách chúng tôi loại bỏ rủi ro đó trước khi hàng rời Việt Nam — phân loại, chọn cỡ, cắt, đóng gói và ghi lại từng bước.",
+    "The checks that protect your reviews": "Những bước kiểm tra bảo vệ review của bạn",
+
+    // ---- v2: care & disposal ----
+    "How to use, dry & dispose:": "Cách dùng, phơi khô & thải bỏ:",
+    "use, dry between uses, retire when worn — then compost the fibre at home; remove any non-fibre parts (wooden handle, cord, label) first.":
+      "dùng, phơi khô giữa các lần dùng, ngưng dùng khi đã mòn — rồi ủ phân phần sợi tại nhà; tháo bỏ các phần không phải sợi (cán gỗ, dây, nhãn) trước.",
+
+    // ---- v2: origin story ----
+    "Grown and vine-dried by farming families": "Được trồng và phơi khô trên giàn bởi các gia đình nông dân",
+    "Our loofah is grown and vine-dried by farming families in storm-prone Central Vietnam, then harvested once fully matured. Buying it supports steady livelihoods — told with respect, not charity.":
+      "Xơ mướp của chúng tôi được trồng và phơi khô trên giàn bởi các gia đình nông dân ở miền Trung Việt Nam nhiều bão, rồi thu hoạch khi đã chín hẳn. Mua sản phẩm này góp phần tạo sinh kế ổn định — kể bằng sự tôn trọng, không phải làm từ thiện."
   };
 
   // placeholder English -> Vietnamese
