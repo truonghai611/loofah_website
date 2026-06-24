@@ -1,0 +1,13 @@
+# Files and folders that should NOT be deployed to the live site
+.git
+.wrangler
+node_modules
+
+# Project/internal docs — not part of the public site
+*.md
+docs
+
+# Sensitive / local-only files
+cred.txt
+.dev.vars*
+.env*
