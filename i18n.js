@@ -219,6 +219,12 @@
     "Proof from past shipments": "Bằng chứng từ các lô hàng đã thực hiện",
     "Real photos and documents from orders we've produced and exported.":
       "Ảnh thật và chứng từ từ các đơn hàng chúng tôi đã sản xuất và xuất khẩu.",
+    "Trusted by eco sellers & natural-product brands worldwide":
+      "Được tin dùng bởi các nhà bán hàng eco & thương hiệu sản phẩm tự nhiên trên toàn thế giới",
+    "Years exporting natural products from Vietnam": "Năm xuất khẩu sản phẩm tự nhiên từ Việt Nam",
+    "Countries exported": "Quốc gia đã xuất khẩu",
+    "Satisfied clients": "Khách hàng hài lòng",
+    "OEM/ ODM experience": "Kinh nghiệm OEM/ ODM",
     "QC inspection": "Kiểm tra QC",
     "Packing & cartons": "Đóng gói & thùng carton",
     "Export documents": "Chứng từ xuất khẩu",
@@ -301,18 +307,15 @@
 
     // ---- footer ----
     "Explore": "Khám phá",
-    "For Amazon Sellers": "Cho người bán Amazon",
-    "For Eco Shops": "Cho cửa hàng eco",
     "Sample Kit": "Bộ mẫu",
     "Request a Quote": "Yêu cầu báo giá",
     "Get in Touch": "Liên hệ",
-    "Email": "Email",
     "Follow us for product updates and new collections": "Theo dõi chúng tôi để cập nhật sản phẩm và bộ sưu tập mới",
     "© 2026 loofahvn.com — Made from natural loofah plant fiber in Vietnam.":
       "© 2026 loofahvn.com — Làm từ sợi xơ mướp tự nhiên tại Việt Nam.",
 
     // ---- v2: nav additions ----
-    "Why Our Fibre": "Vì sao chọn sợi của chúng tôi",
+    "Why Us": "Vì sao chọn chúng tôi",
     "Wholesale": "Bán sỉ",
 
     // ---- v2: hero ----
@@ -324,8 +327,8 @@
 
     // ---- v2: trust badges ----
     "Vine-dried 7–9 months": "Khô trên giàn 7–9 tháng",
-    "Matured and dried in place on the vine — denser, tougher and less mold-prone.":
-      "Chín và khô ngay trên giàn — đặc hơn, dai hơn và ít bị mốc hơn.",
+    "Our loofah is left to dry naturally on the vine for 7–9 months and harvested only once fully matured":
+      "Xơ mướp được phơi khô tự nhiên ngay trên giàn trong 7–9 tháng và chỉ thu hoạch khi đã chín hoàn toàn.",
     "Ships mold-checked & QC-documented": "Giao hàng đã kiểm mốc & có hồ sơ QC",
     "Moisture-controlled and inspected before shipment — no \"ocean surprise\" on arrival.":
       "Kiểm soát độ ẩm và kiểm tra trước khi giao — không còn \"bất ngờ sau đường biển\" khi hàng đến.",
@@ -401,7 +404,135 @@
     // ---- v2: origin story ----
     "Grown and vine-dried by farming families": "Được trồng và phơi khô trên giàn bởi các gia đình nông dân",
     "Our loofah is grown and vine-dried by farming families in storm-prone Central Vietnam, then harvested once fully matured. Buying it supports steady livelihoods — told with respect, not charity.":
-      "Xơ mướp của chúng tôi được trồng và phơi khô trên giàn bởi các gia đình nông dân ở miền Trung Việt Nam nhiều bão, rồi thu hoạch khi đã chín hẳn. Mua sản phẩm này góp phần tạo sinh kế ổn định — kể bằng sự tôn trọng, không phải làm từ thiện."
+      "Xơ mướp của chúng tôi được trồng và phơi khô trên giàn bởi các gia đình nông dân ở miền Trung Việt Nam nhiều bão, rồi thu hoạch khi đã chín hẳn. Mua sản phẩm này góp phần tạo sinh kế ổn định — kể bằng sự tôn trọng, không phải làm từ thiện.",
+
+    // ---- v3: content optimization brief ----
+    // hero
+    "Natural Loofah Products for": "Sản phẩm xơ mướp tự nhiên cho",
+    "Amazon Sellers & Eco Brands": "người bán Amazon & thương hiệu eco",
+    "Compressed packaging. Stable quality. Retail-ready solutions from Vietnam — helping Amazon sellers, eco shops and distributors launch natural products faster, with lower risk.":
+      "Bao bì nén gọn. Chất lượng ổn định. Giải pháp sẵn sàng bán lẻ từ Việt Nam — giúp người bán Amazon, cửa hàng eco và nhà phân phối ra mắt sản phẩm tự nhiên nhanh hơn, ít rủi ro hơn.",
+    "Private Label Available": "Có nhãn riêng",
+    "MOQ From 100 Sets": "MOQ từ 100 bộ",
+    "Retail-Ready Packaging": "Bao bì sẵn sàng lên kệ",
+    "Lower Shipping Volume": "Giảm thể tích vận chuyển",
+    "Faster Product Launch": "Ra mắt sản phẩm nhanh hơn",
+    "Repeat Purchase Category": "Ngành hàng mua lặp lại",
+    "Get Wholesale Pricing": "Nhận báo giá sỉ",
+    "Download Catalog": "Tải catalog",
+
+    // amazon
+    "Launch faster, with lower risk": "Ra mắt nhanh hơn, rủi ro thấp hơn",
+    "Loofah products designed for marketplace success. Reduce inventory risk with low MOQ, optimize logistics with compressed packaging, and receive retail-ready products supported by private label options.":
+      "Sản phẩm xơ mướp được thiết kế để thành công trên sàn TMĐT. Giảm rủi ro tồn kho với MOQ thấp, tối ưu logistics bằng bao bì nén gọn, và nhận sản phẩm sẵn sàng bán lẻ kèm tùy chọn nhãn riêng.",
+    "Lower shipping volume": "Giảm thể tích vận chuyển",
+    "— compressed packaging cuts FBA and landed cost.": "— bao bì nén gọn giảm chi phí FBA và chi phí về kho.",
+    "Flexible MOQ": "MOQ linh hoạt",
+    "— test sell-through before you scale.": "— thử sức bán trước khi mở rộng.",
+    "Private Label Support": "Hỗ trợ nhãn riêng",
+    "— kraft sleeve, cotton bag, barcode and FBA carton.": "— bao giấy kraft, túi cotton, mã vạch và thùng FBA.",
+    "Product Photos & Videos Available": "Có sẵn ảnh & video sản phẩm",
+    "— launch faster, spend less on ad creative.": "— ra mắt nhanh hơn, tốn ít chi phí quảng cáo hơn.",
+    "— plus vine-dried, mold-checked fibre that protects your reviews.": "— cùng sợi khô trên giàn, đã kiểm mốc, bảo vệ review của bạn.",
+    "Explore Amazon Solutions": "Khám phá giải pháp cho Amazon",
+
+    // eco
+    "For Eco Shops & Zero-Waste Stores": "Cho cửa hàng eco & cửa hàng zero-waste",
+    "Add a proven plastic-free product category without large inventory commitments. Offer customers biodegradable alternatives supported by authentic sourcing and eco-friendly packaging.":
+      "Bổ sung một nhóm sản phẩm không nhựa đã được kiểm chứng mà không cần cam kết tồn kho lớn. Mang đến cho khách hàng lựa chọn phân hủy sinh học, đi kèm nguồn gốc xác thực và bao bì thân thiện môi trường.",
+    "Plastic-Free": "Không nhựa",
+    "Home Compostable": "Ủ phân tại nhà được",
+    "— retire the fibre and compost it at home.": "— ngưng dùng và ủ phân phần sợi tại nhà.",
+    "Shelf-Ready Packaging": "Bao bì sẵn lên kệ",
+    "— shelf-friendly, honest and beautiful.": "— hợp kệ trưng bày, trung thực và đẹp.",
+    "Ethical Sourcing Story": "Câu chuyện nguồn gốc có đạo đức",
+    "— a respectful Central Vietnam origin you can retell.": "— nguồn gốc miền Trung Việt Nam được kể bằng sự tôn trọng, dễ kể lại.",
+    "Small Batch Ordering": "Đặt theo lô nhỏ",
+    "— 50 / 100 / 300 mixed SKU starter packs, reorder when it sells.": "— gói khởi đầu 50 / 100 / 300 SKU trộn, đặt lại khi bán chạy.",
+    "Explore Eco Shop Solutions": "Khám phá giải pháp cho cửa hàng eco",
+
+    // wholesale / distributors
+    "For Distributors & Importers": "Cho nhà phân phối & nhà nhập khẩu",
+    "Build a reliable product portfolio with a supplier focused on consistency, scalability and long-term cooperation.":
+      "Xây dựng danh mục sản phẩm đáng tin cậy với nhà cung cấp chú trọng sự ổn định, khả năng mở rộng và hợp tác lâu dài.",
+    "Stable Supply": "Nguồn cung ổn định",
+    "— consistent batches you can forecast and reorder.": "— các lô đồng đều, dễ dự báo và đặt lại.",
+    "Multi-SKU Program": "Chương trình đa SKU",
+    "— bath heroes first, kitchen and body care as add-ons.": "— sản phẩm tắm chủ lực trước, nhà bếp và chăm sóc cơ thể là hàng bổ sung.",
+    "OEM & Private Label": "OEM & nhãn riêng",
+    "— your brand on sleeve, bag, barcode and carton.": "— thương hiệu của bạn trên bao, túi, mã vạch và thùng carton.",
+    "Export Documentation Support": "Hỗ trợ chứng từ xuất khẩu",
+    "— QC summary and paperwork ready to go.": "— bảng tóm tắt QC và hồ sơ sẵn sàng.",
+    "Long-Term Partnership": "Hợp tác lâu dài",
+    "— one supplier for production, packaging and export.": "— một nhà cung cấp cho sản xuất, đóng gói và xuất khẩu.",
+    "Explore Wholesale Solutions": "Khám phá giải pháp bán sỉ",
+
+    // why WINVN
+    "Why WINVN": "Vì sao chọn WINVN",
+    "Why Buyers Choose WINVN": "Vì sao người mua chọn WINVN",
+    "From vine-dried fibre to export paperwork, we package the whole supply into one lower-risk solution — so you can launch faster and reorder with confidence.":
+      "Từ sợi khô trên giàn đến chứng từ xuất khẩu, chúng tôi gói trọn cả chuỗi cung ứng thành một giải pháp ít rủi ro — để bạn ra mắt nhanh hơn và đặt lại tự tin hơn.",
+    "Compressed Logistics": "Logistics nén gọn",
+    "Reduce shipping volume and storage costs with packaging optimized for international distribution.":
+      "Giảm thể tích vận chuyển và chi phí lưu kho với bao bì tối ưu cho phân phối quốc tế.",
+    "Consistent Quality": "Chất lượng ổn định",
+    "Every batch follows quality inspections focused on moisture, mold prevention and product consistency — moisture kept at 10% or below.":
+      "Mỗi lô đều qua kiểm tra chất lượng tập trung vào độ ẩm, phòng mốc và độ đồng đều của sản phẩm — độ ẩm luôn ở mức 10% trở xuống.",
+    "Retail-Ready Solutions": "Giải pháp sẵn sàng bán lẻ",
+    "Packaging options designed for Amazon, eco retail and wholesale channels.":
+      "Các tùy chọn bao bì thiết kế cho Amazon, bán lẻ eco và kênh bán sỉ.",
+    "Test new products with lower risk before scaling. MOQ: 100 pcs.": "Thử sản phẩm mới với rủi ro thấp hơn trước khi mở rộng. MOQ: 100 pcs.",
+    "Ethical Sourcing": "Nguồn gốc có đạo đức",
+    "Support sustainable farming communities in Central Vietnam.":
+      "Hỗ trợ các cộng đồng nông dân bền vững ở miền Trung Việt Nam.",
+    "Export Experience": "Kinh nghiệm xuất khẩu",
+    "Production, packaging and export support from one supplier.":
+      "Hỗ trợ sản xuất, đóng gói và xuất khẩu từ một nhà cung cấp.",
+
+    // built to reduce buyer risk
+    "Reduce buyer risk": "Giảm rủi ro cho người mua",
+    "Built To Reduce Buyer Risk": "Được xây dựng để giảm rủi ro cho người mua",
+    "Importing natural products should not feel like a gamble. Our production and inspection process is designed to reduce the risks buyers care about most.":
+      "Nhập khẩu sản phẩm tự nhiên không nên là một canh bạc. Quy trình sản xuất và kiểm tra của chúng tôi được thiết kế để giảm những rủi ro người mua quan tâm nhất.",
+    "Reduce Mold Risk": "Giảm rủi ro nấm mốc",
+    "Controlled drying and moisture inspection before shipment.": "Sấy khô có kiểm soát và kiểm tra độ ẩm trước khi giao hàng.",
+    "Reduce Review Risk": "Giảm rủi ro đánh giá",
+    "Consistent quality between batches.": "Chất lượng đồng đều giữa các lô hàng.",
+    "Reduce Launch Risk": "Giảm rủi ro ra mắt",
+    "Low MOQ and retail-ready packaging.": "MOQ thấp và bao bì sẵn sàng bán lẻ.",
+    "Reduce Supply Risk": "Giảm rủi ro nguồn cung",
+    "Stable production and export support.": "Sản xuất ổn định và hỗ trợ xuất khẩu.",
+    "Because buyers are not only purchasing products. They are protecting their reviews, reputation and business.":
+      "Vì người mua không chỉ mua sản phẩm. Họ đang bảo vệ review, uy tín và công việc kinh doanh của mình.",
+
+    // from farm to retail shelf
+    "Farm to shelf": "Từ nông trại đến kệ hàng",
+    "From Farm To Retail Shelf": "Từ nông trại đến kệ bán lẻ",
+    "Our loofah is sourced from mature plants in Central Vietnam.":
+      "Xơ mướp của chúng tôi được lấy từ những cây mướp đã chín ở miền Trung Việt Nam.",
+    "The result is stronger fiber, better durability and a more consistent customer experience.":
+      "Kết quả là sợi chắc hơn, độ bền tốt hơn và trải nghiệm khách hàng đồng nhất hơn.",
+    "From the field to the finished container — our complete loofah production process.":
+      "Từ ngoài đồng đến container thành phẩm — toàn bộ quy trình sản xuất xơ mướp của chúng tôi.",
+
+    // packaging tiers
+    "Packaging Options For Every Growth Stage": "Tùy chọn bao bì cho mọi giai đoạn phát triển",
+    "Startup": "Khởi nghiệp",
+    "Kraft Band": "Đai giấy kraft",
+    "Best for testing new products with low investment.": "Phù hợp nhất để thử sản phẩm mới với chi phí thấp.",
+    "Growth": "Tăng trưởng",
+    "Stand-Up Pouch": "Túi đứng",
+    "Stronger shelf presentation and higher perceived value.": "Trình bày trên kệ ấn tượng hơn và giá trị cảm nhận cao hơn.",
+    "Premium": "Cao cấp",
+    "Kraft Window Box": "Hộp giấy kraft có cửa sổ",
+    "Designed for gifting, premium positioning and higher retail pricing.": "Thiết kế cho quà tặng, định vị cao cấp và giá bán lẻ cao hơn.",
+    "Request Packaging Options": "Yêu cầu tùy chọn bao bì",
+
+    // final CTA
+    "Looking For A Reliable Loofah Supplier?": "Đang tìm một nhà cung cấp xơ mướp đáng tin cậy?",
+    "Whether you're launching on Amazon, supplying eco stores or building a private label brand, we're ready to help.":
+      "Dù bạn đang ra mắt trên Amazon, cung cấp cho các cửa hàng eco hay xây dựng thương hiệu nhãn riêng, chúng tôi luôn sẵn sàng hỗ trợ.",
+    "Request Sample": "Yêu cầu mẫu"
   };
 
   // placeholder English -> Vietnamese
@@ -414,8 +545,8 @@
   function norm(s) {
     return (s || "")
       .replace(/\s+/g, " ")
-      .replace(/[\u2018\u2019]/g, "'")
-      .replace(/[\u201C\u201D]/g, '"')
+      .replace(/[‘’]/g, "'")
+      .replace(/[“”]/g, '"')
       .trim();
   }
 
