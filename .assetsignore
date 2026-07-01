@@ -8,6 +8,5 @@ node_modules
 docs
 
 # Sensitive / local-only files
-cred.txt
 .dev.vars*
 .env*
